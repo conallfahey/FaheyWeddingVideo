@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://faheyweddingvideo.com/sitemap.xml
