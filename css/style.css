@@ -14,7 +14,7 @@
 
   /* Typography */
   --font-heading: "Playfair Display", Georgia, serif;
-  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-body: "Lora", Georgia, serif;
 
   /* Spacing */
   --spacing-xs: 4px;
@@ -110,6 +110,15 @@ select {
 
 .section {
   padding: var(--spacing-xxl) 0;
+}
+
+/* Tighten spacing between Packages and FAQ */
+#packages.section { padding-bottom: var(--spacing-lg); }
+#faq.section { padding-top: var(--spacing-lg); }
+
+/* Responsive: stack packages on mobile */
+@media (max-width: 768px) {
+  .package-grid { grid-template-columns: 1fr !important; gap: var(--spacing-md) !important; }
 }
 
 .text-center { text-align: center; }

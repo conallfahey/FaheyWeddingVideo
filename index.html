@@ -11,7 +11,15 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Performance: speed up Vimeo handshake -->
+    <link rel="preconnect" href="https://player.vimeo.com">
+    <link rel="dns-prefetch" href="https://player.vimeo.com">
+    <link rel="preconnect" href="https://i.vimeocdn.com">
+    <link rel="dns-prefetch" href="https://i.vimeocdn.com">
+    <link rel="preconnect" href="https://f.vimeocdn.com">
+    <link rel="dns-prefetch" href="https://f.vimeocdn.com">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -54,7 +62,7 @@
       <section class="hero">
         <div class="hero-bg">
           <img class="hero-poster" src="poster.svg" alt="Hero poster placeholder">
-          <iframe src="https://player.vimeo.com/video/1135133817?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/1135133817?background=1&autoplay=1&muted=1&playsinline=1&loop=1&byline=0&title=0&portrait=0&dnt=1" loading="eager" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
         <div class="hero-content">
           <img class="hero-logo" src="FaheyCrestLogo_WhiteStroke.png" alt="Fahey crest logo">
@@ -88,7 +96,7 @@
             <p>We keep things simple. Choose the coverage and deliverables that fit your day best — all packages include professional audio, color, and licensed music.</p>
           </div>
 
-          <div class="fade-in" style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+          <div class="fade-in package-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
             <!-- Classic -->
             <div style="background: var(--color-surface); border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
               <h3 style="margin-bottom: 8px;">Classic</h3>
@@ -230,6 +238,9 @@
           </div>
           <p style="color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: 24px;">
             &copy; 2025 Fahey Wedding Video. All rights reserved.
+          </p>
+          <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+            An Obskura Studios LLC Company
           </p>
         </div>
       </div>
