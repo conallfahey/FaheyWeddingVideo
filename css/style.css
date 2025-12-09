@@ -191,6 +191,7 @@ select {
   border-bottom: 1px solid rgba(0,0,0,0.05);
   display: flex;
   align-items: center;
+  color: var(--color-text); /* ensure currentColor is neutral, not iOS link blue */
 }
 
 .header .container {
@@ -260,9 +261,10 @@ select {
   appearance: none;
   color: var(--color-text);
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-fill-color: var(--color-text);
 }
 
-.mobile-toggle svg { color: inherit; }
+.mobile-toggle svg { color: inherit; stroke: currentColor; fill: none; }
 
 .mobile-toggle:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
 
