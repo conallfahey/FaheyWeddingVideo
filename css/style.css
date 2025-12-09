@@ -259,12 +259,20 @@ select {
   justify-self: end;
   -webkit-appearance: none;
   appearance: none;
-  color: var(--color-text);
+  color: var(--color-text) !important;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-fill-color: var(--color-text);
 }
 
 .mobile-toggle svg { color: inherit; stroke: currentColor; fill: none; }
+.mobile-toggle:active, .mobile-toggle:focus { color: var(--color-text) !important; }
+.mobile-toggle svg line, .mobile-toggle svg path, .mobile-toggle svg rect { stroke: currentColor !important; }
+
+/* iOS Safari-specific reinforcement */
+@supports (-webkit-touch-callout: none) {
+  .mobile-toggle { color: var(--color-text) !important; -webkit-text-fill-color: var(--color-text) !important; }
+  .mobile-toggle svg, .mobile-toggle svg *, .mobile-toggle { -webkit-tap-highlight-color: transparent !important; }
+}
 
 .mobile-toggle:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
 
