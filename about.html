@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Fahey Wedding Video</title>
+    <title>About | Fahey Wedding Films</title>
     <meta name="description" content="We are a small, owner‑operated wedding videography team based in Chicago, passionate about crafting elegant, timeless films.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <base href="./">
@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- SEO & Social -->
-    <link rel="canonical" href="https://fahey-wedding.video/about.html">
+    <link rel="canonical" href="https://www.faheyweddingfilms.com/about.html">
     <meta name="theme-color" content="#0f1115">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="About | Fahey Wedding Video">
+    <meta property="og:title" content="About | Fahey Wedding Films">
     <meta property="og:description" content="Small, owner‑operated team based in Chicago. Passionate about videography and honest storytelling.">
-    <meta property="og:url" content="https://fahey-wedding.video/about.html">
+    <meta property="og:url" content="https://www.faheyweddingfilms.com/about.html">
     <meta name="twitter:card" content="summary">
   </head>
   <body>
@@ -30,7 +30,7 @@
       <div class="container">
         <a href="/" class="logo">
           <img src="FaheyCrestLogo_GreenFill.png" alt="Fahey crest logo">
-          Fahey Wedding Video
+          Fahey Wedding Films
         </a>
         <nav class="nav-links">
           <a href="/" class="nav-link">Home</a>
@@ -57,6 +57,22 @@
             <h1>About Us</h1>
             <p>We’re a small, owner‑operated wedding videography studio based in Chicago. We care deeply about honest storytelling, clean audio, and elegant visuals that feel true to your day.</p>
           </div>
+
+          <!-- Meet the Owner Section -->
+          <div class="fade-in owner-section">
+            <div class="owner-grid">
+              <div class="owner-image-wrapper">
+                <img src="images/headshot.webp" alt="Conall Fahey" class="owner-image" width="768" height="768">
+              </div>
+              <div class="owner-text">
+                <h2>Meet Conall</h2>
+                <p class="owner-role">Owner & Lead Filmmaker</p>
+                <p>I started Fahey Wedding Films with a simple goal: to create wedding films that feel real. With a background in documentary filmmaking, I approach every wedding with a keen eye for genuine moments and a commitment to unobtrusive storytelling.</p>
+                <p>When I'm not behind the camera, you can find me exploring Chicago's coffee shops or planning my next travel adventure.</p>
+              </div>
+            </div>
+          </div>
+
           <div class="fade-in about-grid">
             <div style="background: var(--color-surface); border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
               <h3 style="margin-bottom: 8px;">Owner‑Operated</h3>
@@ -67,6 +83,7 @@
               <p style="color: var(--color-text-muted);">We’re proud to call Chicago home and happily travel for destination weddings worldwide.</p>
             </div>
           </div>
+
           <div class="fade-in" style="display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px;">
             <div style="background: var(--color-surface-alt); border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 20px;">
               <h3 style="margin-bottom: 8px;">Our Approach</h3>
@@ -85,14 +102,14 @@
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px;">
           <a href="/" class="logo" style="color: white;">
             <img src="FaheyCrestLogo_WhiteStroke.png" alt="Fahey crest logo">
-            Fahey Wedding Video
+            Fahey Wedding Films
           </a>
           <div style="display: flex; gap: 24px;">
             <a href="https://www.instagram.com/conallfahey" target="_blank" style="color: rgba(255,255,255,0.7);">Instagram</a>
-            <a href="mailto:conall@faheyweddingvideo.com" style="color: rgba(255,255,255,0.7);">Email Us</a>
+            <a href="mailto:conall@faheyweddingfilms.com" style="color: rgba(255,255,255,0.7);">Email Us</a>
           </div>
           <p style="color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: 24px;">
-            &copy; 2025 Fahey Wedding Video. All rights reserved.
+            &copy; 2025 Fahey Wedding Films. All rights reserved.
           </p>
           <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">
             An Obskura Studios LLC Company
@@ -100,6 +117,45 @@
         </div>
       </div>
     </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.faheyweddingfilms.com/about.html"
+          },
+          "headline": "About Fahey Wedding Films",
+          "description": "We’re a small, owner‑operated wedding videography studio based in Chicago.",
+          "publisher": {
+            "@type": "ProfessionalService",
+            "name": "Fahey Wedding Films",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.faheyweddingfilms.com/FaheyCrestLogo_WhiteStroke.png"
+            }
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.faheyweddingfilms.com/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://www.faheyweddingfilms.com/about.html"
+          }]
+        }
+      ]
+    }
+    </script>
 
     <script src="js/script.js"></script>
   </body>

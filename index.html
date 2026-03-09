@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fahey Wedding Video | Elegant Wedding Videography</title>
-    <meta name="description" content="Fahey Wedding Video crafts cinematic wedding films with clean audio, natural storytelling, and fast delivery. Book a professional wedding videographer today.">
+    <title>Fahey Wedding Films | Timeless Wedding Videography</title>
+    <meta name="description" content="Fahey Wedding Films crafts cinematic wedding films with clean audio, natural storytelling, and fast delivery. Book a professional wedding videographer today.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <base href="./">
     
@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- SEO & Social -->
-    <link rel="canonical" href="https://fahey-wedding.video/">
+    <link rel="canonical" href="https://www.faheyweddingfilms.com/">
     <meta name="theme-color" content="#0f1115">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Fahey Wedding Video | Timeless Wedding Videography">
+    <meta property="og:title" content="Fahey Wedding Films | Timeless Wedding Videography">
     <meta property="og:description" content="Cinematic wedding films that feel natural and true to your story.">
-    <meta property="og:url" content="https://fahey-wedding.video/">
+    <meta property="og:url" content="https://www.faheyweddingfilms.com/">
     <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-6117f3ad985b?q=80&w=1600&auto=format&fit=crop">
     <meta name="twitter:card" content="summary_large_image">
   </head>
@@ -39,7 +39,7 @@
       <div class="container">
       <a href="/" class="logo">
         <img src="FaheyCrestLogo_GreenFill.png" alt="Fahey crest logo">
-          Fahey Wedding Video
+          Fahey Wedding Films
         </a>
         <nav class="nav-links">
           <a href="/" class="nav-link">Home</a>
@@ -69,7 +69,15 @@
           <img class="hero-logo" src="FaheyCrestLogo_WhiteStroke.png" alt="Fahey crest logo">
           <h1>Timeless Wedding Videography</h1>
           <p style="font-size: .95rem; color: var(--color-text-white); margin-top: 8px;">Based in Chicago • Available for destination weddings worldwide.</p>
-          <a href="#contact" class="btn">Check Availability</a>
+          <form class="hero-form" action="https://formsubmit.co/conall@obskurastudios.com" method="POST">
+            <div class="hero-form-row">
+              <input type="text" name="date" required placeholder="Wedding Date" onfocus="(this.type='date')" onblur="(this.type='text')" aria-label="Wedding Date">
+              <input type="email" name="email" required placeholder="Email Address" aria-label="Email Address">
+              <button type="submit" class="btn">Check Availability</button>
+            </div>
+            <input type="hidden" name="_subject" value="New Hero Inquiry">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
         </div>
         <div class="scroll-indicator">
           <span>Scroll</span>
@@ -178,7 +186,7 @@
             </div>
             <div>
               <h4 style="font-size: 1.1rem; margin-bottom: 8px;">How soon is the film delivered?</h4>
-              <p style="font-size: 0.95rem;">We take great care in editing your film. Typical delivery time is within 3-4 weeks after your wedding day.</p>
+              <p style="font-size: 0.95rem;">We take great care in editing your film. Typical delivery for a first draft is within 1-2 weeks after your wedding day.</p>
             </div>
           </div>
         </div>
@@ -193,7 +201,7 @@
           </div>
           
           <form id="contactForm" action="https://formsubmit.co/conall@obskurastudios.com" method="POST" class="fade-in" style="max-width: 700px; margin: 0 auto; background: white; padding: 40px; border-radius: var(--radius-lg); box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
-            <div class="form-row">
+            <div class="form-row"> 
               <div>
                 <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">Name</label>
                 <input id="name" name="name" type="text" required placeholder="Your name" style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius-sm);">
@@ -236,14 +244,14 @@
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px;">
       <a href="/" class="logo" style="color: white;">
         <img src="FaheyCrestLogo_WhiteStroke.png" alt="Fahey crest logo">
-            Fahey Wedding Video
+            Fahey Wedding Films
           </a>
           <div style="display: flex; gap: 24px;">
             <a href="https://www.instagram.com/conallfahey" target="_blank" style="color: rgba(255,255,255,0.7);">Instagram</a>
-            <a href="mailto:conall@faheyweddingvideo.com" style="color: rgba(255,255,255,0.7);">Email Us</a>
+            <a href="mailto:conall@faheyweddingfilms.com" style="color: rgba(255,255,255,0.7);">Email Us</a>
           </div>
           <p style="color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: 24px;">
-            &copy; 2025 Fahey Wedding Video. All rights reserved.
+            &copy; 2025 Fahey Wedding Films. All rights reserved.
           </p>
           <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">
             An Obskura Studios LLC Company
@@ -255,15 +263,59 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Fahey Wedding Video",
-      "url": "https://fahey-wedding.video/",
-      "description": "Cinematic wedding videography and storytelling.",
-      "logo": "https://fahey-wedding.video/FaheyCrestLogo_WhiteStroke.png",
-      "areaServed": "International",
-      "priceRange": "$$",
-      "sameAs": [
-        "https://www.instagram.com/conallfahey",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.faheyweddingfilms.com/#organization",
+          "name": "Fahey Wedding Films",
+          "url": "https://www.faheyweddingfilms.com/",
+          "logo": "https://www.faheyweddingfilms.com/FaheyCrestLogo_WhiteStroke.png",
+          "image": "https://images.unsplash.com/photo-1519741497674-6117f3ad985b?q=80&w=1600&auto=format&fit=crop",
+          "description": "Cinematic wedding videography and storytelling based in Chicago, available worldwide.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chicago",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          },
+          "areaServed": "International",
+          "priceRange": "$$$",
+          "sameAs": [
+            "https://www.instagram.com/conallfahey"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.faheyweddingfilms.com/#website",
+          "url": "https://www.faheyweddingfilms.com/",
+          "name": "Fahey Wedding Films",
+          "description": "Timeless Wedding Videography",
+          "publisher": {
+            "@id": "https://www.faheyweddingfilms.com/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.faheyweddingfilms.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you record vows and speeches?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! We use professional lavalier microphones and backup recorders to ensure crystal clear audio of your vows and toasts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How soon is the film delivered?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We take great care in editing your film. Typical delivery for a first draft is within 1-2 weeks after your wedding day."
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
